@@ -1,4 +1,4 @@
-# UPD-CRS-Prof-Predictor
+# UP Diliman CRS Professor Predictor
 UP Diliman CRS Professor Predictor
 
 # Authors
