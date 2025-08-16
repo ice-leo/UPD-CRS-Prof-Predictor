@@ -76,7 +76,7 @@ The app provides fields for class number, day, room, semester, and start/end tim
 
 To retrain models:
 
-1. Update the dataset every year: `CRS Math Profs (2018-2024).csv`
+1. Update `CRS_Math_Profs_Database.ipynb` every year by setting `last_year` to the latest year.
 2. Run `CRS_Math_Profs_Predictor_RF.ipynb` or `CRS_Math_Profs_Predictor_XGBoost.ipynb` to preprocess, split, train models, and export the best one.
 3. The output includes:
 
