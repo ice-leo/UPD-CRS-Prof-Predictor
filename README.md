@@ -16,9 +16,9 @@ UPD CRS Professor Predictor applies classification models (Random Forest & XGBoo
 ## Features
 
 * **Hybrid Predictor**: Prioritizes exact schedule–prof mapping for single-class professors, then uses trained ML models for others.
-* **Flexible Feature Handling**: Accepts schedule entries like `"1:00PM"` or `"1330"` and encodes day, room, semester properly (label or one-hot) to match training data.
-* **Model Customization**: Try both Random Forest and XGBoost (with parameter tuning options).
-* **Streamlit UI**: Interactive web interface to enter class details and get predictions.
+* **Flexible Feature Handling**: Accepts schedule entries in military time like `"13:00"` and encodes day, room, semester properly (label or one-hot) to match training data.
+* **Model Customization**: Implemented Random Forest and XGBoost (with parameter tuning options) with Random Forest performing better.
+* **Streamlit UI**: Interactive web interface to enter class details and get predictions. Another feature is the schedule dashboard, which composes of graphs for easy checking of prof stats.
 
 ---
 
@@ -50,10 +50,10 @@ model, encoders, feature_cols = load_model("trained_model.pkl")
 predicted = predict_professor(
     number=126,
     day="WF",
-    room="MB121",
+    room="MB 121",
     semester="2nd sem",
-    start_time="1:00PM",
-    end_time="2:30PM",
+    start_time="13:00",
+    end_time="14:30",
     model=model,
     encoders=encoders,
     feature_columns=feature_cols
@@ -78,7 +78,7 @@ The app provides fields for class number, day, room, semester, and start/end tim
 ## Model Details
 
 * **Random Forest**: Baseline model with manual hyperparameter tuning.
-* **XGBoost**: Tuned using `StratifiedKFold` + `RandomizedSearchCV`, scoring based on macro-F1 to handle class imbalance.
+* **XGBoost**: Tuned using `StratifiedKFold` + `RandomizedSearchCV`, scoring based on accuracy.
 * **One-class rule**: For professors with only one class, an exact-match dictionary maps the schedule to the professor directly.
 
 ---
@@ -91,8 +91,6 @@ To retrain models:
 2. Run `train.py` to preprocess, split, train models, and export the best one.
 3. The output includes:
 
-   * `trained_model.pkl`
-   * `label_encoders.pkl`
-   * `feature_columns.json` for input alignment in the predictor.
+   * `best_rf_model.pkl`
 
 Contributions welcome! Feel free to file issues or pull requests.
