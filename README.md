@@ -27,12 +27,6 @@ UPD CRS Professor Predictor applies classification models (Random Forest & XGBoo
 ```bash
 git clone https://github.com/ice-leo/UPD-CRS-Prof-Predictor.git
 cd UPD-CRS-Prof-Predictor
-
-# Recommended: create virtual environment
-python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
-
-pip install -r requirements.txt
 ```
 
 ---
@@ -41,22 +35,17 @@ pip install -r requirements.txt
 
 ### Command Line
 
-Use the Python module directly:
+Use Python directly:
 
 ```python
-from predictor import predict_professor, load_model
 
-model, encoders, feature_cols = load_model("trained_model.pkl")
-predicted = predict_professor(
+predicted = predict(
     number=126,
     day="WF",
     room="MB 121",
     semester="2nd sem",
     start_time="13:00",
-    end_time="14:30",
-    model=model,
-    encoders=encoders,
-    feature_columns=feature_cols
+    end_time="14:30"
 )
 print("Predicted Professor:", predicted)
 ```
