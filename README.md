@@ -60,7 +60,7 @@ To launch the interactive web interface:
 streamlit run streamlit_app.py
 ```
 
-The app provides fields for class number, day, room, semester, and start/end times. It displays the predicted professor.
+The app provides fields for class number, day, room, semester, and start/end times. It displays the predicted professor. The app also has a dashboard for easy visualizations.
 
 ---
 
