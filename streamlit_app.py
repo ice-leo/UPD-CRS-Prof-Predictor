@@ -16,7 +16,7 @@ st.title("CRS Math Professors Predictor and Dashboard")
 
 # File paths
 DATA_PATH = r"CRS Math Profs (2018-2024).csv"
-MODEL_PATH = r"best_xgb_model.pkl"
+MODEL_PATH = r"best_rf_model_compressed.pkl"
 
 # Check if files exist
 if not os.path.exists(DATA_PATH):
