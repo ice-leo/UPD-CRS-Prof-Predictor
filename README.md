@@ -4,6 +4,8 @@ Online web app link [here](https://upd-crs-prof-predictor-taeq8ccusqtmiz2d6pr4ew
 
 A tool for predicting the course professor of Math classes using class details (course number, day, room, semester, start/end time) powered by Random Forest Classifier (33.26% accuracy).
 
+![Schedule](\images\banner.png)
+
 # Authors
 - [Mariano, Isaiah John](https://github.com/ice-leo)
 - Montealto, Meluisa
