@@ -3,9 +3,9 @@
 A tool for predicting the course professor of Math classes using class details (course number, day, room, semester, start/end time) powered by Random Forest Classifier (33.26% accuracy).
 
 # Authors
-- Mariano, Isaiah John
+- [Mariano, Isaiah John](https://github.com/ice-leo)
 - Montealto, Meluisa
-- Regalario, Jeremiah Daniel
+- [Regalario, Jeremiah Daniel](https://github.com/jeremiahdanielregalario)
 
 ## Overview
 
