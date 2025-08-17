@@ -15,8 +15,8 @@ st.set_page_config(page_title="CRS Math Profs Predictor", layout="wide")
 st.title("CRS Math Professors Predictor and Dashboard")
 
 # File paths
-DATA_PATH = r"C:\Users\Isaiah\Personal Projects\UP CRS Prof Predictor\CRS Math Profs (2018-2024).csv"
-MODEL_PATH = r"C:\Users\Isaiah\Personal Projects\UP CRS Prof Predictor\best_rf_model.pkl"
+DATA_PATH = r"CRS Math Profs (2018-2024).csv"
+MODEL_PATH = r"best_xgb_model.pkl"
 
 # Check if files exist
 if not os.path.exists(DATA_PATH):
@@ -277,4 +277,5 @@ with tab2:
             ax5.set_ylabel("Number of Rooms")
             st.pyplot(fig5)
     else:
+
         st.warning("No classes match your filters. Try adjusting your criteria.")
