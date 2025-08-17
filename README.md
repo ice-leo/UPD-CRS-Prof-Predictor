@@ -6,6 +6,8 @@ A tool for predicting the course professor of Math classes using class details (
 
 ![Schedule](./images/banner.png)
 
+![Schedule](./images/sched.png)
+
 # Authors
 - [Mariano, Isaiah John](https://github.com/ice-leo)
 - Montealto, Meluisa
