@@ -77,7 +77,7 @@ The app provides fields for class number, day, room, semester, and start/end tim
 
 ## Model Details
 
-* **Random Forest**: Baseline model with manual hyperparameter tuning.
+* **Random Forest**: Served as the baseline model. Tuned using `StratifiedKFold` + `GridSearchCV`, scoring based on accuracy.
 * **XGBoost**: Tuned using `StratifiedKFold` + `RandomizedSearchCV`, scoring based on accuracy.
 * **One-class rule**: For professors with only one class, an exact-match dictionary maps the schedule to the professor directly.
 
