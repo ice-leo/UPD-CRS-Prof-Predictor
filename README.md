@@ -64,9 +64,9 @@ print("Predicted Professor:", predicted)
 
 To launch the interactive web interface:
 
-1. **Launch IDE (VS Code)**
-2. **Run `streamlit.py`**
-3. **Run in command line**
+1. Launch IDE (VS Code)
+2. Run `streamlit.py` in the IDE.
+3. Run in command line
 ```bash
 python -m streamlit run "c:/path/to/your/project/streamlit_app.py"
 ```
