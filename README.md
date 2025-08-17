@@ -30,7 +30,7 @@ git clone https://github.com/ice-leo/UPD-CRS-Prof-Predictor.git
 ```
 
 2. **Get the model**:
-Run `CRS_Math_Profs_Predictor_RF.ipynb` or `CRS_Math_Profs_Predictor_XGBoost.ipynb` to get the pickle file (either `best_xgb_model.pkl` or `best_rf_model.pkl`)
+Run `CRS_Math_Profs_Predictor_RF.ipynb` or `CRS_Math_Profs_Predictor_XGBoost.ipynb` to get the pickle file (either `best_xgb_model.pkl` or `best_rf_model.pkl`).
 ---
 
 3. **Modify `streamlit.py` code**:
@@ -64,9 +64,9 @@ print("Predicted Professor:", predicted)
 
 To launch the interactive web interface:
 
-1. Launch IDE (VS Code)
+1. Launch IDE (VS Code).
 2. Run `streamlit.py` in the IDE.
-3. Run in command line
+3. Run in command line:
 ```bash
 python -m streamlit run "c:/path/to/your/project/streamlit_app.py"
 ```
