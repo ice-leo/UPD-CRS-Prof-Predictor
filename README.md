@@ -18,18 +18,21 @@ UPD CRS Professor Predictor applies classification models (Random Forest & XGBoo
 * **Hybrid Predictor**: Prioritizes exact schedule–prof mapping for single-class professors, then uses trained ML models for others.
 * **Flexible Feature Handling**: Accepts schedule entries in military time like `"13:00"` and encodes day, room, semester properly (label or one-hot) to match training data.
 * **Model Customization**: Implemented Random Forest and XGBoost (with parameter tuning options) with Random Forest performing better.
-* **Streamlit UI**: Interactive web interface to enter class details and get predictions. Another feature is the schedule dashboard, which composes of graphs for easy checking of prof stats.
+* **Streamlit UI**: Interactive web interface to enter class details and get predictions. Another feature is the schedule dashboard, which consists of graphs for easy checking of professor statistics.
 
 ---
 
 ## Installation
 
+1. **Clone the repository**:
 ```bash
 git clone https://github.com/ice-leo/UPD-CRS-Prof-Predictor.git
-cd UPD-CRS-Prof-Predictor
 ```
 
+2. **Get the model**:
+Run `CRS_Math_Profs_Predictor_RF.ipynb` or `CRS_Math_Profs_Predictor_XGBoost.ipynb` to get the pickle file (either `best_xgb_model.pkl` or `best_rf_model.pkl`)
 ---
+
 
 ## Usage
 
@@ -54,10 +57,10 @@ print("Predicted Professor:", predicted)
 
 ### Streamlit Web App
 
-To launch the interactive web interface:
+To launch the interactive web interface, run in the command line:
 
 ```bash
-streamlit run streamlit_app.py
+python -m streamlit run "c:/path/to/your/project/streamlit_app.py"
 ```
 
 The app provides fields for class number, day, room, semester, and start/end times. It displays the predicted professor. The app also has a dashboard for easy visualizations.
