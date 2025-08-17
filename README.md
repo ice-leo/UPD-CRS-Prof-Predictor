@@ -33,6 +33,11 @@ git clone https://github.com/ice-leo/UPD-CRS-Prof-Predictor.git
 Run `CRS_Math_Profs_Predictor_RF.ipynb` or `CRS_Math_Profs_Predictor_XGBoost.ipynb` to get the pickle file (either `best_xgb_model.pkl` or `best_rf_model.pkl`)
 ---
 
+3. **Modify `streamlit.py` code**:
+Depending on your model of choice, modify:
+```python
+MODEL_PATH = r"C:\Users\Isaiah\Personal Projects\UP CRS Prof Predictor\best_{xgb or rf}_model.pkl"
+```
 
 ## Usage
 
@@ -57,8 +62,11 @@ print("Predicted Professor:", predicted)
 
 ### Streamlit Web App
 
-To launch the interactive web interface, run in the command line:
+To launch the interactive web interface:
 
+1. **Launch IDE (VS Code)**
+2. **Run `streamlit.py`**
+3. **Run in command line**
 ```bash
 python -m streamlit run "c:/path/to/your/project/streamlit_app.py"
 ```
