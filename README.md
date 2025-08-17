@@ -1,6 +1,6 @@
 # UP Diliman CRS Math Professor Predictor
 
-Online web app link [here](https://upd-crs-prof-predictor-taeq8ccusqtmiz2d6pr4ew.streamlit.app/)
+Online web app link [here](https://upd-crs-prof-predictor.streamlit.app/)
 
 A tool for predicting the course professor of Math classes using class details (course number, day, room, semester, start/end time) powered by Random Forest Classifier (33.26% accuracy).
 
