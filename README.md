@@ -41,9 +41,9 @@ MODEL_PATH = r"C:\Users\Isaiah\Personal Projects\UP CRS Prof Predictor\best_{xgb
 
 ## Usage
 
-### Command Line
+### Jupyter Notebook
 
-Use Python directly:
+Open either `CRS_Math_Profs_Predictor_RF.ipynb` or `CRS_Math_Profs_Predictor_XGBoost.ipynb` then use the `predict` function:
 
 ```python
 
