@@ -228,7 +228,7 @@ with tab2:
     
     if not filtered_df.empty:
         # Display data table
-        st.dataframe(filtered_df.sort_values(['Year', 'Semester']), hide_index=True)
+        st.dataframe(filtered_df.sort_values(['Year', 'Semester']).head(50), hide_index=True)
         st.markdown("""
                 <style>
             [data-testid="stElementToolbar"] {
